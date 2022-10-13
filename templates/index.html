@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recognisation of Objects</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recognisation of Objects</h1>
+        <p>Click on the "Choose File" button to upload a file:</p>
+        <form method="post" action="/predict" enctype = "multipart/form-data">
+            <input type="file" name="file" id="upl">
+            <input type="submit" value="SUBMIT "id="sub">
+        </form>
+        <div class="pred">{{ prediction_text }}</div>
+    </div>
+    
+
+
+
+    </body>
+</html>
